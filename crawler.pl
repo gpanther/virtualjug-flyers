@@ -11,7 +11,7 @@ my $template = join('', <DATA>);
 $template = Text::Template->new(TYPE => 'STRING', SOURCE => $template)
     or die("Can't construct template!\n");
 my $ua = LWP::UserAgent->new;
-my $feed = $ua->get('http://feeds.feedburner.com/VirtualJUG?format=xml');
+my $feed = $ua->get('http://virtualjug.com/feed/');
 die $feed->status_line unless $feed->is_success;
 my $max_page_id = extract_max_page_id($feed->decoded_content);
 
