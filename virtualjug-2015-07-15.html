@@ -1,0 +1,1419 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+	.page-break	{ display: block; page-break-before: always; }
+}
+</style>
+</head>
+<body>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Java byte code in practice</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/5cNyrkjJ5KY/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>At first glance, Java byte code can appear to be some low level magic that is both hard to understand and effectively irrelevant to application developers. However, neither is true. With only little practice, Java byte code becomes easy to read and can give true insights into the functioning of a Java program. In this talk, we will cast light on compiled Java code and its interplay with the Java virtual machine. In the process, we will look into the evolution of byte code over the recent major releases with features such as dynamic method invocation which is the basis to Java 8 lambda expressions. Finally, we will learn about tools for the run time generation of Java classes and how these tools are used to build modern frameworks and libraries. Among those tools, I present Byte Buddy, an open source tool of my own efforts and an attempt to considerably simplify run time code generation in Java. (<a href="http://bytebuddy.net">http://bytebuddy.net</a>)</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1673">http://virtualjug.com/?p=1673</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1673" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Effective IDE Usage</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/FwfHxholaEE/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>You don’t want your IDE to propose java.awt.List as import when you need java.util.List? This talk will show you how to get rid of the proposal and how to use your IDE effectively to concentrate on your work.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1658">http://virtualjug.com/?p=1658</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1658" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Building “Bootiful”­ Microservices with Spring Cloud</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/pMPsf9LI8kk/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>We get it already! Microservices help you build smaller, singly-focused services, quicker. They scale out. They’re more agile because individual teams can deliver them at their own pace. They work well in the cloud because they’re smaller, and benefit from elastic, horizontal scaling. But what about the complexity? There’s a cost associated with adding services and coordinating the interactions between them. In this talk, we’ll look at Spring Cloud, which builds atop Spring Boot and the Netflix OSS stack, and see how it lets you easily integrate service-discovery, security, reliability patterns like the circuit breaker, and centralized and journaled property configuration (and more) to build resilient microservices that scale.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1552">http://virtualjug.com/?p=1552</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1552" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Architecting Large Enterprise Java Projects</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/tSN1gOVQfPs/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>In the past I’ve been building component oriented applications with what I had at hand. Mostly driven by the features available in the Java EE standard to be “portable” and easy to use. Looking back this has been a perfect fit for many customers and applications. With an increasing demand for highly integrated applications which use already available services and processes from all over the place (departmental, central or even cloud services) this approach starts to feel more and more outdated. And this feel does not come from a technology perspective but from all the requirements around it. Having this in mind this post is the starting point of a series of how-to’s and short tutorials which aim to showcase some more diverse ways of building (Java EE) applications that fit better into today’s requirements and landscapes.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1546">http://virtualjug.com/?p=1546</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1546" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>JavaLand Session: How is Java/JVM built?</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/FZvteeaLHEw/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><b>Mr Webber</b> <b>developer</b> and <b>Ms Janet Java developer</b> are both developers who are interested in broadening their know-how of the Java platform. <b>Mr Webber</b> <b>developer</b> shares with <b>Ms Janet</b> <b>Java developer</b> conservations about Javaland, vJUG, Nighthacking and Adopt OpenJDK – a preview of their conversation.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1533">http://virtualjug.com/?p=1533</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1533" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>JavaLand Session: What’s coming in Java.Next?</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/BLksrrxOHTU/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>This session will take place live from the Javaland conference in Germany on the Nighthacking stage! Learn from <strong>Heather VanCura</strong> how you can take part in Java technology by Adopting a JSR.  This session give a brief overview of the Adopt-a-JSR program and how to participate through the Virtual JUG. We will meet and discuss with three current JCP Spec Leads to find out how their JSRs could benefit from vJUG Adopt-a-JSR participation.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1532">http://virtualjug.com/?p=1532</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1532" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Building Modular Java Applications in the Cloud</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/3HmfDQKhldg/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Modularity is an architectural theme that you’ll hear about more and more. Being able to deal with change in a codebase is not something trivial and requires some serious thought. In this talk I will show you that it is actually pretty easy to achieve a modular architecture using OSGi, and the right set of tools. Of course everything will be demonstrated using live coding!</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1436">http://virtualjug.com/?p=1436</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1436" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Java Memory Model Pragmatics</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/TxqsKzxyySo/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>The Java Memory Model is the most complicated part of Java spec that must be understood by at least library and runtime developers. Unfortunately, it is worded in such a way that it takes a few senior guys to decipher it for each other. </p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1388">http://virtualjug.com/?p=1388</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1388" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>The Live Reflection Madness</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/AxvJgtaojUw/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Heinz likes to compare reflection to opium. Not the perfume. The drug. In this live coding session, he will start by showing some of the powerful features available to us in Java. </p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1347">http://virtualjug.com/?p=1347</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1347" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Package your Java EE application using Docker and Kubernetes</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/OEflMTJUV4c/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Docker simplifies software delivery by making it easy to build and share images that contain your application’s operating system. It packages your application and infrastructure together, managed as one component.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1343">http://virtualjug.com/?p=1343</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1343" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>jOOQ: Get Back in Control of Your SQL</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/7bqmj-3DODE/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>SQL is a powerful and highly expressive language for queries against relational databases. SQL is established, standardised and hardly challenged by alternative querying languages.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1337">http://virtualjug.com/?p=1337</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1337" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Java and the Wave Glider, by James Gosling</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/EgUctRxaiLs/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><a href="http://irclog.greptilian.com/virtualJUG/2015-01-22">IRC logs be be found here</a>.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1325">http://virtualjug.com/?p=1325</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1325" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Scala for Java Developers</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/PQPvZkA-6bg/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>– What are the major advantages/features Scala provides<br /="/"/>
+– Why should someone move from Java to Scala<br /="/"/>
+– What is the future direction of Scala<br /="/"/>
+</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1302">http://virtualjug.com/?p=1302</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1302" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Kotlin for Java Developers</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/vmjfIRsawlg/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>– What are the major advantages/features Kotlin provides<br /="/"/>
+– Why should someone move from Java to Kotlin<br /="/"/>
+– What is the future direction of Kotlin<br /="/"/>
+</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1297">http://virtualjug.com/?p=1297</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1297" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Ceylon for Java Developers</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/gbI6nooTHQY/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>– What are the major advantages/features Ceylon provides<br /="/"/>
+– Why should someone move from Java to Ceylon<br /="/"/>
+– What is the future direction of Ceylon<br /="/"/>
+</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1294">http://virtualjug.com/?p=1294</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1294" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Groovy for Java Developers</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/FkLZ7kDCIBk/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><strong>Speaker: Guillaume Laforge</strong></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1288">http://virtualjug.com/?p=1288</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1288" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Building the Internet of Things with Java</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/BcVdZJqfGxM/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>It may seem hard to get started with the Internet of Things (IoT) with so many technologies, protocols, hardware platforms, involved. In this session, Benjamin Cabé from the Eclipse Foundation will cover all you need to know </p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1195">http://virtualjug.com/?p=1195</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1195" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Reactive Programming: Creating highly responsive applications</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/16CH5zr50B0/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Reactive Programming in gaining a lot of attention recently, but what is it? It is a culmination of a lot of good ideas developed over the years, but brought together by the forces of recent developments</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1193">http://virtualjug.com/?p=1193</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1193" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Shaping Java’s future & vJUG party!</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/HvDCv-PIAOE/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><span style="font-weight: bold;">Shaping Java’s future & vJUG party!</span></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1191">http://virtualjug.com/?p=1191</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1191" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>HTML5, AngularJS, Groovy, Java and MongoDB all together – what could go wrong?</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/MRrSAkEAnZQ/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><strong>Speaker: Trisha Gee</strong></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1188">http://virtualjug.com/?p=1188</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1188" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Opinionated JavaFX 8</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/W-ezZqeGQ6Y/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><strong>Speaker: Adam Bien</strong></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1157">http://virtualjug.com/?p=1157</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1157" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>3 years of backend testing at Shazam [the stuff we got wrong]</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/9kWslvOpQfw/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><strong>Speaker: Colin Vipurs</strong></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1155">http://virtualjug.com/?p=1155</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1155" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Pragmatic Functional Refactoring with Java 8</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/ymW1QFQ7iFM/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><strong>Speakers: Richard Warburton & Raoul-Gabriel Urma</strong></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1152">http://virtualjug.com/?p=1152</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1152" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Highly Strung: Understanding your Type System</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/KMnv-A-ANP4/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><strong>Highly Strung: Understanding your Type System</strong></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=1121">http://virtualjug.com/?p=1121</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=1121" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Testing and Refactoring Legacy Code</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/JTHMd1nQlSg/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p><strong>Speaker: Sandro Mancuso</strong></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=993">http://virtualjug.com/?p=993</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=993" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>vJUG panel: Review of 2164 Survey Responses on Java Tools and Technology</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/s5oG6b3LpbQ/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speakers: Arun Gupta, Josh Long, Marcus Lagergren, Alex Snaps, David Blevins & Oliver White (Moderator). We look at the recent explosive publication of RebelLabs’ “Java Tools and Technologies Landscape for 2014”, a beautifully-designed, 56-page snapshot of what over 2000 Java developers from around the world are using in their daily development.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=938">http://virtualjug.com/?p=938</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=938" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Java Classloaders: The good, the bad and the WTF.</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/Bf1f5pZ4CmM/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Simon Maple.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=936">http://virtualjug.com/?p=936</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=936" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>vJUG Panel: What do the Oracle/Google shenanigans mean to the Java Developer?</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/CONDgjrOTv8/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker(s): Bruno Souza, <span style="color: rgba(0, 0, 0, 0.670588);">Martijn Verburg and Hildeberto Mendonça, Lukas Eder & Michael Rice. (Moderated by Simon Maple)</span></p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=865">http://virtualjug.com/?p=865</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=865" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Netty – The async event-driven network application framework</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/5VIG7YBnSvI/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Norman Maurer.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=862">http://virtualjug.com/?p=862</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=862" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Evolving code without breaking compatibility</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/sRUqqLObosY/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Kohsuke Kawaguchi</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=159">http://virtualjug.com/?p=159</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=159" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Building Bootiful Applications with Spring Boot</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/eCos5VTtZoI/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Josh Long</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=157">http://virtualjug.com/?p=157</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=157" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Java 8 Parallel Streams Workshop</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/LRh0nDuYCyY/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Stuart Marks.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=155">http://virtualjug.com/?p=155</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=155" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Project Lambda: Functional Prog. Constructs and Simpler Concurrency in Java SE 8</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/Std4TEmBdTM/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Simon Ritter.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=153">http://virtualjug.com/?p=153</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=153" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>WebSocket Applications using Java EE 7</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/lbANLOUFe58/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Arun Gupta.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=151">http://virtualjug.com/?p=151</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=151" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Comparing JVM Web Frameworks</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/ygW8fJVlDxQ/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Matt Raible</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=149">http://virtualjug.com/?p=149</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=149" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>55 New Features in Java SE 8</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/rtAredKhyac/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Simon Ritter</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=147">http://virtualjug.com/?p=147</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=147" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>How To Do Kick-Ass Software Development</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/QCnzefe72rg/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Speaker: Sven Peters</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=144">http://virtualjug.com/?p=144</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=144" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Getting started with Java EE 7</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/M87rQp74WUE/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Presenter: Arun Gupta.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=142">http://virtualjug.com/?p=142</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=142" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Don’t be that guy! Developer Security Awareness</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/uKy6wAeaPEU/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Presenter(s): Markus Eisele.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=139">http://virtualjug.com/?p=139</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=139" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Drive-by Contributions</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/0Iq0pI259yk/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Presenter(s): Brent Beer & Matthew McCullough.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=137">http://virtualjug.com/?p=137</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=137" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+<center style="padding-top: 10px">
+<table width="320">
+<tr><td colspan="2">
+<h2>Design is a Process, not a Document</h2>
+</td></tr>
+
+<tr><td colspan="2">
+
+<p><img style="width: 500px; height: auto;" src="https://img.youtube.com/vi/GixwXNlZ7dI/maxresdefault.jpg" />
+</td></tr>
+
+<tr><td colspan="2">
+<br>
+
+<p>Presenter(s): Trisha Gee.</p>
+
+<br>
+<br>
+
+</td></tr>
+
+<tr valign="top">
+<td>
+<p><img src="http://virtualjug.com/wp-content/uploads/2014/04/Vjug.png" />
+
+</td>
+<td align="right">
+<p><a href="http://virtualjug.com/?p=132">http://virtualjug.com/?p=132</a>
+<p><img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://virtualjug.com/?p=132" />
+</td></tr>
+
+</table>
+</center>
+<div class="page-break"></div>
+</body></html>
