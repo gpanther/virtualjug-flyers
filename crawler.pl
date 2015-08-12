@@ -35,6 +35,9 @@ print << 'EOC';
 <body>
 EOC
 
+my @pages;
+print "<h2>Table of Contents</h2>\n";
+print "<ul>\n";
 for my $page_id (reverse 1 .. $max_page_id) {
     my $page = $ua->get("http://virtualjug.com/?p=$page_id");
     next unless $page->is_success;
@@ -50,13 +53,19 @@ for my $page_id (reverse 1 .. $max_page_id) {
     my $description = extract_description($p);
     next unless $description;
 
-    print $template->fill_in(HASH => {
+    print "\t<li><a href=\"#$video\">$title</a></li>\n";
+
+    push @pages, $template->fill_in(HASH => {
+        content_id => $video,
         title => $title,
         youtube_id => $video,
         description => $description,
         url => "http://virtualjug.com/?p=$page_id",
     });
 }
+print "</ul>\n<div class=\"page-break\"></div>\n";
+
+print $_ for (@pages);
 
 print "</body></html>\n";
 
@@ -129,7 +138,7 @@ __DATA__
 <center style="padding-top: 10px">
 <table width="320">
 <tr><td colspan="2">
-<h2>{$title}</h2>
+<h2 id="{$content_id}">{$title}</h2>
 </td></tr>
 
 <tr><td colspan="2">
