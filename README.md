@@ -7,6 +7,7 @@ Dependencies:
 - Modern::Perl
 - LWP::UserAgent
 - pQuery
+- Text::Template
 
 Run it something like this:
 
