@@ -1,3 +1,7 @@
+# UNMAINTAINED
+
+Please note that I don't have the time to maintain this any more. If you are interested in taking it over, please contact me and I would be happy to explain the details.
+
 # virtualjug-flyers
 
 A small Perl 5 script to create flyers popularizing episodes from [virtualjug.com](http://virtualjug.com/).
